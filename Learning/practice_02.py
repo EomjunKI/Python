@@ -18,7 +18,7 @@ print(3 >= 10)    # more than / less than
 print(3 == 3)     # equal
 print(3 != 3)     # not equal
 
-# 02.02. Mathematical expression
+# 02.02 Mathematical expression
 num = 14
 print(num)
 num += 2    # same as 'num = num + 2'
