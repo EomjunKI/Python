@@ -31,3 +31,15 @@ generation_30s = age >= 30 and age < 40
 print('This song is Attention by ' + name)    # fix string to variable
 print(name + ' is ' + str(age))               # convert int type into str type
 print('Is', name, 'in his 30s?', generation_30s)    # use , instead of +
+
+# 01.05 Comment
+
+# single line commet
+'''
+multy
+line
+comment
+'''
+# multy
+# line
+# comment
