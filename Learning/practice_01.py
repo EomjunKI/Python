@@ -43,3 +43,25 @@ comment
 # multy
 # line
 # comment
+
+# 01.06 Quiz
+
+"""
+Use the variables to output the following statement
+
+Variable name
+ : airport
+
+Variable value
+ : 'Denver', 'Miami', 'San Jose'
+
+Output
+ : Board your flight to XXX at gate 8
+"""
+
+airport = 'Denver'
+print('Board your flight to ' + airport + ' at gate 8')
+airport = 'Miami'
+print('Board your flight to ' + airport + ' at gate 8')
+airport = 'San Jose'
+print('Board your flight to ' + airport + ' at gate 8')
