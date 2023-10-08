@@ -15,5 +15,5 @@ print('A'*4)         # repeat text use *int
 print(5 > 10)          # False
 print(5 < 10)          # True
 print(True)            # True
-print(not Ture)        # False
+print(not True)        # False
 print(not (5 > 10))    # True
