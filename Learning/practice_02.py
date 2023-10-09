@@ -55,3 +55,18 @@ from random import *
 print(random())    # 0.0 <= float type value < 1.0
 print(randrange(1, 10))    # 1 <= int type value < 10
 print(randint(1, 10))    # 1 <= int type value <= 10
+
+# 01.06 Quiz
+
+"""
+You go to the theater once a month.
+Write a program that determines the day to go to the theater.
+However, you must meet the following requirements.
+
+1. Have to choose randomly.
+2. Decide between 5th and 28th
+"""
+from random import *
+
+date = randint(5, 28)
+print('The day to go to the theater every month is the '+ str(date) +'th.')
