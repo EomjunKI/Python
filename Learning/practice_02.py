@@ -47,3 +47,11 @@ from math import *
 print(floor(3.14))    # round down
 print(ceil(3.14))     # round up
 print(sqrt(16))
+
+# 02.04 Random function
+
+from random import *
+
+print(random())    # 0.0 <= float type value < 1.0
+print(randrange(1, 10))    # 1 <= int type value < 10
+print(randint(1, 10))    # 1 <= int type value <= 10
