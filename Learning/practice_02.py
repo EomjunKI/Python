@@ -31,3 +31,19 @@ num -= 2    # same as 'num = num - 2'
 print(num)
 num %= 2    # same as 'num = num % 2'
 print(num)
+
+# 02.03 Mathematical functions
+
+# builtin function
+print(abs(-5))
+print(pow(3, 2))    # pow(base,power)
+print(max(5, 2))
+print(min(5, 2))
+print(round(3.14))
+print(round(3.8))
+
+# module function
+from math import *
+print(floor(3.14))    # round down
+print(ceil(3.14))     # round up
+print(sqrt(16))
