@@ -56,7 +56,7 @@ print(random())    # 0.0 <= float type value < 1.0
 print(randrange(1, 10))    # 1 <= int type value < 10
 print(randint(1, 10))    # 1 <= int type value <= 10
 
-# 01.06 Quiz
+# 02.05 Quiz
 
 """
 You go to the theater once a month.
