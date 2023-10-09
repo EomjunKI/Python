@@ -52,3 +52,11 @@ print('I got {1} {0} singing'.format(99, 'problems'))    # following number in b
 num = 99
 word = 'problems'
 print(f'I got {num} {word} singing')
+
+# 03.05 Escape code
+
+print('Not a \"Yes, sir\", not a follower')    # \" - use ', ", \
+print('Not a "Yes, sir", \nnot a follower')    # \n - new line
+print('Not a "Yes, sir",\r not a follower')    # \r - return cursor to initial
+print('Not a "Yes, sir",\b not a follower')    # \b - remove one letter
+print('Not a "Yes, sir",\t not a follower')    # \t - make long space
