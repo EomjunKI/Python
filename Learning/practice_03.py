@@ -34,3 +34,21 @@ print(lyrics.count('u'))     # count all u in string
 
 index = lyrics.index('u', index + 1)    # 2nd position of u
 print(index)
+
+# 03.04 String format
+
+# use ' % '
+print('I got %d problems singing' % 99)            # %d - int type
+print('I %cot 99 problems singing' % 'g')          # %c - only one letter
+print('I got 99 %s singing' % 'problems')          # %s - str type
+print('I got %s %s singing' % (99, 'problems'))    # write in order
+
+# use ' {} '
+print('I got {} problems singing'.format(99))
+print('I got {num} problems singing'.format(num = 99))
+print('I got {} {} singing'.format(99, 'problems'))
+print('I got {1} {0} singing'.format(99, 'problems'))    # following number in bracket
+
+num = 99
+word = 'problems'
+print(f'I got {num} {word} singing')
