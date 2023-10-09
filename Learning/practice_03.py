@@ -60,3 +60,21 @@ print('Not a "Yes, sir", \nnot a follower')    # \n - new line
 print('Not a "Yes, sir",\r not a follower')    # \r - return cursor to initial
 print('Not a "Yes, sir",\b not a follower')    # \b - remove one letter
 print('Not a "Yes, sir",\t not a follower')    # \t - make long space
+
+# 03.06 Quiz
+
+"""
+Write a program that creates a password for each website.
+However, you must meet the following requirements.
+
+1. Use SLD
+2. Create as first 3 letter + length + number of e + '!'
+"""
+
+url = 'https://www.google.com'
+
+name = url[url.index('.') + 1:]
+name = name[:name.index('.')]
+pw = name[:3] + str(len(name)) + str(name.count("e")) + '!'
+
+print(f'Password of {url} is \'{pw}\'')
