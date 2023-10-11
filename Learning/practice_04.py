@@ -19,3 +19,23 @@ playlist.reverse()                # reverse order
 print(playlist)
 playlist.clear()                  # clear list
 print(playlist)
+
+# 04.02 Dictionary
+
+playlist = {'A-1':'stay', 'A-2':'bones'}
+print(playlist['A-1'])
+print(playlist.get('A-1'))
+print(playlist.get('A-3'))
+print(playlist.get('A-3','avilable'))
+print('A-3' in playlist)
+playlist['A-3'] = 'attention'    # add key & value
+print(playlist)
+playlist['A-3'] = 'YOUTH'        # replace value
+print(playlist)
+del playlist['A-1']              # delete key & value
+print(playlist)
+print(playlist.keys())           # show all key
+print(playlist.values())         # show all value
+print(playlist.items())          # show all key & value
+playlist.clear()                 # clear dictionary
+print(playlist)
