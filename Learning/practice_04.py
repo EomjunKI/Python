@@ -60,3 +60,10 @@ pl_2.add('high')       # add element
 print(pl_2)
 pl_1.remove('hero')    # delete element
 print(pl_1)
+
+# 04.05 Convert collection
+
+pl_1 = tuple(pl_1)
+print(pl_1, type(pl_1))
+pl_1 = list(pl_1)
+print(pl_1, type(pl_1))    # convert set, list, tuple
