@@ -67,3 +67,28 @@ pl_1 = tuple(pl_1)
 print(pl_1, type(pl_1))
 pl_1 = list(pl_1)
 print(pl_1, type(pl_1))    # convert set, list, tuple
+
+# 04.06 Quiz
+"""
+Write lottery program.
+However, you must meet the following requirements.
+
+1. Choose one special number from 1 to 49.
+2. Choose five numbers form 1 to 49.
+3. No overlap.
+4. Use sample of the random module.
+
+Output
+========Winning numbers========
+special : XX
+numbers : [XX, XX, XX, XX, XX]
+===============================
+"""
+
+from random import *
+num = list(range(1,50))
+win_num = sample(num, 6)
+print('========Winning numbers========')
+print('special : {}'.format(win_num[0]))
+print('numbers : {}'.format(win_num[1:]))
+print('===============================')
