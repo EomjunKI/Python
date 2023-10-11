@@ -39,3 +39,8 @@ print(playlist.values())         # show all value
 print(playlist.items())          # show all key & value
 playlist.clear()                 # clear dictionary
 print(playlist)
+
+# 04.03 Tuple
+
+(L_1, L_2, L_3) = ('wish', 'you', 'the best')
+print(L_1, L_2, L_3)
