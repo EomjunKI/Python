@@ -44,3 +44,19 @@ print(playlist)
 
 (L_1, L_2, L_3) = ('wish', 'you', 'the best')
 print(L_1, L_2, L_3)
+
+# 04.04 set
+playlist_A = ['dangerously', 'hero', 'high', 'unholy', 'stronger']
+pl_1 = {'dangerouly', 'hero', 'high'}
+pl_2 = set(['hero', 'stronger'])
+
+print(pl_1 & pl_2)     # and
+print(pl_1.intersection(pl_2))
+print(pl_1 | pl_2)     # or
+print(pl_1.union(pl_2))
+print(pl_1 - pl_2)     # subtract
+print(pl_1.difference(pl_2))
+pl_2.add('high')       # add element
+print(pl_2)
+pl_1.remove('hero')    # delete element
+print(pl_1)
