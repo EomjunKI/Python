@@ -17,3 +17,14 @@ elif temp >= 10 & temp <20:
     print('Cool')
 else : 
     print('Cold')
+
+# 05.01 for
+
+playlist = ["STAY", "Flowers", "Attention"]
+for song in playlist:
+    print("song : {}".format(song))
+
+for playlist_num in range(5): # until 5th
+    print("number of playlist : {}".format(playlist_num))
+for playlist_num in range(1,5): # 1 or more and less than 4
+    print("number of playlist : {}".format(playlist_num))
