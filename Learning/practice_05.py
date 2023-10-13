@@ -18,7 +18,7 @@ elif temp >= 10 & temp <20:
 else : 
     print('Cold')
 
-# 05.01 for
+# 05.02 for
 
 playlist = ["STAY", "Flowers", "Attention"]
 for song in playlist:
