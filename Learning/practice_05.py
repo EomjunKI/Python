@@ -38,3 +38,14 @@ while num < 10:
     num += 1
     result += num
 print(result)
+
+# 05.04 Continue & Break
+
+exception = [3, 5]
+end_sequence = [7]
+for num in range(10):
+    if num in exception:
+        continue    # pass
+    elif num in end_sequence:
+        break       # stop
+    print(num)
