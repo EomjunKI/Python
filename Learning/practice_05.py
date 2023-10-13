@@ -1,4 +1,4 @@
-# 05.01 if
+# 05.01 If
 
 weather = 'snowy'
 if weather == 'rainy' or weather == 'snowy':
@@ -18,7 +18,7 @@ elif temp >= 10 & temp <20:
 else : 
     print('Cold')
 
-# 05.02 for
+# 05.02 For
 
 playlist = ["STAY", "Flowers", "Attention"]
 for song in playlist:
@@ -29,7 +29,7 @@ for playlist_num in range(5): # until 5th
 for playlist_num in range(1,5): # 1 or more and less than 4
     print("number of playlist : {}".format(playlist_num))
 
-# 05.03 whlie
+# 05.03 Whlie
 
 num = 0
 result = 0
