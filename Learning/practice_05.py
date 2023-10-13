@@ -49,3 +49,9 @@ for num in range(10):
     elif num in end_sequence:
         break       # stop
     print(num)
+
+# 05.05 Single line for loop
+
+playlist = ["STAY", "Flowers", "Attention"]
+playlist_len = [len(i) for i in playlist]
+print(playlist_len)
