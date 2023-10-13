@@ -28,3 +28,13 @@ for playlist_num in range(5): # until 5th
     print("number of playlist : {}".format(playlist_num))
 for playlist_num in range(1,5): # 1 or more and less than 4
     print("number of playlist : {}".format(playlist_num))
+
+# 05.03 whlie
+
+num = 0
+result = 0
+while num < 10:
+    print(num, result)
+    num += 1
+    result += num
+print(result)
