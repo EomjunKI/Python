@@ -44,3 +44,34 @@ def profile_2(singer, *song):
 
 profile_2('Charlie Puth', 'That\'s Hilarious', 'Dangerously')
 profile_2('Post Malane', 'Goodbyes')
+
+# 06.06 Local & Global variables
+
+num_song = 10
+
+def add_song(new):
+    num_song = 30    # use only in function
+    num_song = num_song + new
+    print('Number of songs in playlist : {}'.format(num_song))
+
+print('Number of songs in playlist : {}'.format(num_song))
+add_song(4)
+print('Number of songs in playlist : {}'.format(num_song))
+
+def add_song(new):
+    global num_song    # use global variable
+    num_song = num_song + new
+    print('Number of songs in playlist : {}'.format(num_song))
+
+print('Number of songs in playlist : {}'.format(num_song))
+add_song(4)
+print('Number of songs in playlist : {}'.format(num_song))
+
+def add_song_return(num_song, new):    # global variable as input
+    num_song = num_song + new
+    print('Number of songs in playlist : {}'.format(num_song))
+    return num_song
+
+print('Number of songs in playlist : {}'.format(num_song))
+num_song = add_song_return(num_song, 4)
+print('Number of songs in playlist : {}'.format(num_song))
