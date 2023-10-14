@@ -33,3 +33,14 @@ profile1('Goodbyes', 'Post Malane')
 # 06.04 Keyword
 
 profile(singer = 'Post Malane', song = 'Goodbyes')
+
+# 06.05 Variable factor
+
+def profile_2(singer, *song):
+    print('singer : {}\t'.format(singer),end=' ')
+    for songs in song:
+        print(songs, end=' ')
+    print()
+
+profile_2('Charlie Puth', 'That\'s Hilarious', 'Dangerously')
+profile_2('Post Malane', 'Goodbyes')
