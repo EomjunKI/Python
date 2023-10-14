@@ -75,3 +75,30 @@ def add_song_return(num_song, new):    # global variable as input
 print('Number of songs in playlist : {}'.format(num_song))
 num_song = add_song_return(num_song, 4)
 print('Number of songs in playlist : {}'.format(num_song))
+
+# 06.07 Quiz
+
+'''
+Write a program to calculate standard weight.
+However, you must meet the following requirements.
+
+1. Using PIBW
+    male : height[m] * height[m] * 22
+    female : height[m] * height[m] * 21
+2. Calculate in function
+3. Mark to second decimal place
+
+Output sample
+Standard weight of XX who is XXcm tall is XXkg.
+'''
+
+def std_weight(height, gender):
+    if gender == 'Male':
+        return height ** 2 * 22
+    else:
+        return height ** 2 * 21
+
+height = 175
+gender = 'Male'
+weight = round(std_weight(height / 100, gender), 2)
+print('Standard weight of {}cm tall {} is {}kg.'.format(height, gender, weight))
