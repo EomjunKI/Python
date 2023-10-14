@@ -29,3 +29,7 @@ def profile1(song, singer='Charlie Puth'):    # use repeated inputs
 profile1('That\'s Hilarious')
 profile1('Dangerously')
 profile1('Goodbyes', 'Post Malane')
+
+# 06.04 Keyword
+
+profile(singer = 'Post Malane', song = 'Goodbyes')
