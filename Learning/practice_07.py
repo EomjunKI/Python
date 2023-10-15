@@ -77,3 +77,10 @@ profile_file = open('profile.pickle', 'rb') # open file to read at binary type
 profile_file = pickle.load(profile_file)    # road data from file
 print(profile)
 profile_file.close()
+
+# 07.05 With
+
+import pickle
+
+with open('profile.pickle', 'rb') as profile_file:
+    print(pickle.load(profile_file))
