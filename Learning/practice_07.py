@@ -26,3 +26,40 @@ print('{0:+,}'.format(10000000))
 print('{0:^<+15,}'.format(10000000))
 print('{0:f}'.format(5/3))
 print('{0:.2f}'.format(5/3))
+
+# 07.03 File IO
+
+playlist_file = open('playlist.txt', 'w',)  # file to write
+print('Symphony : Clean Bandit', file=playlist_file)    # automatic line change
+print('Love Yourself : Justin Bieber', file=playlist_file)
+playlist_file.close()
+
+playlist_file = open('playlist.txt', 'a',)  # file to write continually
+playlist_file.write('Photograph : Ed Sheeran\n')    # not automatic line change
+playlist_file.write('Demons : Imagine Dragons')
+playlist_file.close()
+
+playlist_file = open('playlist.txt', 'r')   # file to read
+print(playlist_file.read()) # read all
+playlist_file.close()
+
+playlist_file = open('playlist.txt', 'r')
+print(playlist_file.readline()) # read single line, Move cursor to next
+print(playlist_file.readline())
+print(playlist_file.readline(), end='')
+print(playlist_file.readline())
+playlist_file.close()
+
+playlist_file = open('playlist.txt', 'r')
+while True:
+    line = playlist_file.read()
+    if not line:
+        break
+    print(line)
+playlist_file.close()
+
+playlist_file = open('playlist.txt', 'r')
+lines = playlist_file.read()
+for line in lines:
+    print(line, end='')
+playlist_file.close()
