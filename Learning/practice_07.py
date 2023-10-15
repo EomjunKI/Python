@@ -63,3 +63,17 @@ lines = playlist_file.read()
 for line in lines:
     print(line, end='')
 playlist_file.close()
+
+# 07.04 Pickle
+
+import pickle
+profile_file = open('profile.pickle', 'wb') # open file to write at binary type
+profile = {'name':'Sam Ryder', 'age':34, 'song':['Tiny Riot', 'More', 'Whirlwind']}
+print(profile)
+pickle.dump(profile, profile_file)  # save data to file
+profile_file.close()
+
+profile_file = open('profile.pickle', 'rb') # open file to read at binary type
+profile_file = pickle.load(profile_file)    # road data from file
+print(profile)
+profile_file.close()
