@@ -74,7 +74,7 @@ pickle.dump(profile, profile_file)  # save data to file
 profile_file.close()
 
 profile_file = open('profile.pickle', 'rb') # open file to read at binary type
-profile_file = pickle.load(profile_file)    # road data from file
+profile = pickle.load(profile_file)    # road data from file
 print(profile)
 profile_file.close()
 
@@ -84,3 +84,23 @@ import pickle
 
 with open('profile.pickle', 'rb') as profile_file:
     print(pickle.load(profile_file))
+
+# 07.06 Quiz
+
+'''
+Write a program for each week's report until week 50.
+However, you must meet the following requirements.
+
+1. Report Format
+- Week XX Weekly Report -
+Department :
+Name :
+Task :
+'''
+
+for i in range(1,51):
+    with open('Week' + str(i).zfill(2), 'w') as reprot_file:
+        reprot_file.write('- Week ' + str(i).zfill(2) + ' Weekly Report -\n')
+        reprot_file.write('Department :\n')
+        reprot_file.write('Name :\n')
+        reprot_file.write('Task :\n')
