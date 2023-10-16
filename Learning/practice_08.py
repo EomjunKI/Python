@@ -24,3 +24,10 @@ class Detailed_profile(Profile):    # sub class (super class_1, super class_2)
 
 singer_1 = Detailed_profile('Elijah Woods', '24/7, 365', 42)
 singer_1.information()
+
+# 08.03 Super
+
+class Detailed_profile_2(Profile):
+    def __init__(self, name, title, genre):
+        super().__init__(name, title)   # remove self
+        self.genre = genre
