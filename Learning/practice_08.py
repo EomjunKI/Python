@@ -9,3 +9,18 @@ class Profile:
 
 singer_1 = Profile('Elijah Woods', '24/7, 365') # instance
 singer_2 = Profile('Tape Machines', '3D Print')
+
+# 08.02 Inheritance
+
+class Detailed_profile(Profile):    # sub class (super class_1, super class_2)
+    def __init__(self, name, title, age):
+        Profile.__init__(self, name, title)
+        self.age = age
+
+    def information(self):
+        print(f'Name : {self.name}')
+        print(f'Title : {self.title}')
+        print(f'age = {self.age}')
+
+singer_1 = Detailed_profile('Elijah Wood', '24/7, 365', 42)
+singer_1.information()
