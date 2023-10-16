@@ -22,5 +22,5 @@ class Detailed_profile(Profile):    # sub class (super class_1, super class_2)
         print(f'Title : {self.title}')
         print(f'age = {self.age}')
 
-singer_1 = Detailed_profile('Elijah Wood', '24/7, 365', 42)
+singer_1 = Detailed_profile('Elijah Woods', '24/7, 365', 42)
 singer_1.information()
