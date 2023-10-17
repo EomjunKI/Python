@@ -29,3 +29,14 @@ try:
     print(f'{num}')
 except DefinedError:
     print('DefinedError')
+
+# 09.04 Finally
+
+try:
+    num = 8
+    if num > 4:
+        raise
+except RuntimeError:
+    print('RuntimeError')
+finally:    # certainly output
+    print('program end')
