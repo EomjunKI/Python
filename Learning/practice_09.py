@@ -16,3 +16,16 @@ try:
         raise ValueError
 except ValueError:
     print('over 3') 
+
+# 09.03 User-defined exceptions
+
+class DefinedError(Exception):  # inherit exception
+    pass
+
+try:
+    num = 6
+    if num > 3 :
+        raise DefinedError
+    print(f'{num}')
+except DefinedError:
+    print('DefinedError')
