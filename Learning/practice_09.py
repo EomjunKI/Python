@@ -40,3 +40,41 @@ except RuntimeError:
     print('RuntimeError')
 finally:    # certainly output
     print('program end')
+
+# 09.05 Quiz
+
+'''
+Write a program that automated ordering system for waiting.
+However, you must meet the following requirements.
+
+1. All customers can order up to 10 chicken in total.
+'''
+
+class SoldOutError(Exception):
+    pass
+
+chicken = 10
+waiting = 1
+while(True):
+    try:
+        print(f'Remaining Chicken : {chicken:<2}')
+        order = int(input('How many would you like to order?'))
+        if order > chicken:
+            print('lack of ingredients')
+        elif order <= 0:
+            raise ValueError
+        else:
+            print(f'[Waiting : {waiting:<2}]') 
+            print(f'Your order for {order:<2} chickens has been completed')
+            waiting += 1
+            chicken -= order
+
+        if chicken == 0:
+            raise SoldOutError
+        
+    except ValueError:
+        print('Enter an incorrect value')
+
+    except SoldOutError:
+        print('ingredients are exhausted.')
+        break
