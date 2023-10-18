@@ -23,3 +23,9 @@ if __name__ == "__main__":  # to check that it is top-level program
     print('Run internally')
 else:
     print('Run externally')
+
+# 10.04 Location of package or module
+
+import inspect
+import numpy
+print(inspect.getfile(numpy))
