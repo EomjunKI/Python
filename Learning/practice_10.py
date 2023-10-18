@@ -37,3 +37,13 @@ print(inspect.getfile(numpy))
 print(dir())    # display variables and functions
 
 # 10.07 Module Index
+
+# 10.08 Quiz
+
+'''
+Write a function that leaves a signature within the project
+'''
+
+def sign():
+    print('This program was written by EomJunKI.')
+    print('Email : gohra159@gmail.com')
