@@ -14,3 +14,5 @@ from numpy import array as arr  # use 'arr' instead of 'array'
 
 matrix_3 = arr([4,5,6])
 print(matrix_3)
+
+# 10.02 Package
