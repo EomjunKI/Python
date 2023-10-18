@@ -29,3 +29,5 @@ else:
 import inspect
 import numpy
 print(inspect.getfile(numpy))
+
+# 10.05 Pip install
