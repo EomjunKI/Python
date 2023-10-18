@@ -31,3 +31,7 @@ import numpy
 print(inspect.getfile(numpy))
 
 # 10.05 Pip install
+
+# 10.06 Builtin function
+
+print(dir())    # display variables and functions
