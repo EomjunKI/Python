@@ -35,3 +35,5 @@ print(inspect.getfile(numpy))
 # 10.06 Builtin function
 
 print(dir())    # display variables and functions
+
+# 10.07 Module Index
