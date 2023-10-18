@@ -16,3 +16,10 @@ matrix_3 = arr([4,5,6])
 print(matrix_3)
 
 # 10.02 Package
+
+# 10.03 Run modules
+
+if __name__ == "__main__":  # to check that it is top-level program
+    print('Run internally')
+else:
+    print('Run externally')
