@@ -41,9 +41,8 @@ print(dir())    # display variables and functions
 # 10.08 Quiz
 
 '''
-Write a function that leaves a signature within the project
+Write a module that leaves a signature within the project
 '''
 
-def sign():
-    print('This program was written by EomJunKI.')
-    print('Email : gohra159@gmail.com')
+import byme
+byme.sign()
